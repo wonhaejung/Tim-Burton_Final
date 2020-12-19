@@ -1,0 +1,408 @@
+/* ============================================================================================== 
+SED Innovations
+https://sed.am
+https://mkrtchyan.ga
+================================================================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+body{background-image:url('../img/bgcolor.png');
+	overflow:hidden;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.wh{
+	font-size:1.2rem;
+	color:white;
+	width:1000px;
+	height:auto;
+	position:absolute;
+	padding-left:5%; 
+	padding-top:17%; 
+	animation-name:typ;
+	animation-duration:8.5s;
+	animation-play-state:ease-in-out;
+	
+	}
+.wh2{
+	font-size:1.8rem;
+	color:white;
+	width:1000px;
+	height:auto;
+	position:absolute;
+	padding-left:5%; 
+	padding-top:14%; 
+	animation-name:typ;
+	animation-duration:8s;
+	animation-play-state:ease-in-out;
+	
+	}
+.wh3{
+	font-size:0.8rem;
+	color:gray;
+	width:550px;
+	height:auto;
+	position:absolute;
+	padding-left:5%; 
+	padding-top:19%; 
+	text-align:justify;
+	animation-name:typ;
+	animation-duration:9s;
+	animation-play-state:ease-in-out;
+	
+	}
+@keyframes typ {
+	0%{
+		opacity:0%;
+		filter:blur(10px);
+	}
+	50%{
+		opacity:0%;
+		
+	}
+	100%{
+		opacity:100%;
+		filter:blur(0px);
+	}
+}
+.land-3{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background-repeat:no-repeat;
+	background-image: url('../img/ground1.png');
+	background-size: 100vw;
+	animation-name:blur2;
+	animation-duration:10s;
+	animation-play-state:ease-in;
+	animation-fill-mode:forwards;
+
+}
+.land-4{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background-repeat:no-repeat;
+	background-image: url('../img/ground.png');
+	background-size: 100vw;
+	animation-name:blur2;
+	animation-duration:10s;
+	animation-play-state:ease-in;
+	animation-fill-mode:forwards;
+
+}
+@keyframes blur2{
+	0%{
+		filter:blur(0px);
+	}
+
+	100%{
+		filter:blur(2px);
+	}
+}
+.land-2{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background-repeat:no-repeat;
+	background-image: url('../img/tree.png');
+	background-size: 100%;
+	animation-name:blur3;
+	animation-duration:10s;
+	animation-play-state:ease-in;
+	animation-fill-mode:forwards;
+}
+
+@keyframes blur3{
+	0%{
+		filter:blur(0px);
+	}
+
+	100%{
+		filter:blur(5px);
+	}
+}
+.land-21{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background-repeat:no-repeat;
+	background-image: url('../img/light.png');
+	background-size: 100vw;
+	animation-name:op;
+	animation-duration: 1.5s;
+	animation-timing-function:ease-in-out;
+	animation-iteration-count:infinite;
+}
+@keyframes op {
+	0%{
+		opacity:100%;
+		filter:blur(10px);
+	}
+	50%{
+		opacity:0%;
+		filter:blur(10px);
+
+	}
+	100%{
+		opacity:100%;
+		filter:blur(10px);
+	}
+}
+
+.moon{
+	bottom:1%;
+	left:25%;
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	background-image: url('../img/moon.png');
+	background-size: 85vw;
+	position:absolute;
+	z-index:-10;
+	animation-name:blur;
+	animation-duration:5s;
+	animation-play-state:ease-in-out;
+	animation-fill-mode:forwards;
+}
+
+@keyframes blur{
+	0%{
+		filter:blur(10px);
+	}
+
+	100%{
+		filter:blur(0px);
+	}
+}
+
+.snow{
+	width:150%;
+	height:10000px;
+	position:absolute;
+	background-image: url('../img/snow.png');
+	background-repeat: repeat;
+	background-size:100vw;
+	z-index:-11;
+	opacity:25%;
+	animation-name:snow;
+	animation-duration:100s;
+	animation-iteration-count:infinite;
+	animation-play-state:ease-in;
+	animation-fill-mode:forwards;
+}
+@keyframes snow{
+	0%{
+		top:-10000px;
+	}
+
+	100%{
+		top:0px;
+	}
+}
+
+.bingle{
+	left:6%;
+	bottom:2%;
+	width:200%;
+	height:200%;
+	position:absolute;
+	background-repeat:no-repeat;
+	background-image:url('../img/bingle2.png');
+	background-size:85vw;
+	z-index:-15;
+	opacity:10%;
+	animation-delay:2.5s;
+	animation:rotatee 25s  infinite linear ;
+	transform-origin:25% 50%;
+}
+@keyframes rotatee{
+	0%{transform:rotate(0deg);}
+	100%{
+		transform:rotate(360deg);
+	}
+}
+
+.type{width:100%;
+	height:100%;
+	left:3%;
+	top:3%;
+	position:absolute;
+	background-repeat:no-repeat;
+	background-image: url('../img/type.png');
+	background-size:25vw;
+	z-index:-5;
+	animation-name:typ;
+	animation-duration:7s;
+	animation-play-state:ease-in-out;
+	
+
+}
+}
+
+.fogwrapper {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
+  filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
+  z-index:-10;
+}
+#foglayer_01, #foglayer_02, #foglayer_03 {
+  height: 100%;
+  position: absolute;
+  width: 200%;
+}
+#foglayer_01 .image01, #foglayer_01 .image02,
+#foglayer_02 .image01, #foglayer_02 .image02,
+#foglayer_03 .image01, #foglayer_03 .image02 {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+#foglayer_01 {
+  -webkit-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+  -moz-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+  animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+}
+#foglayer_02, #foglayer_03 {
+  -webkit-animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+  -moz-animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+  animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+}
+
+/* ---------- Moving Fog ---------- */
+/*
+  'size: cover' || 'size: 100%'; results remain the same
+  'attachment: scroll' can be added or removed; results remain the same
+  'attachment: fixed' causing unexpected results in Chrome
+  'repeat-x' || 'no-repeat'; results remain the same
+*/ 
+#foglayer_01 .image01, #foglayer_01 .image02 {
+  background: url("https://raw.githubusercontent.com/danielstuart14/CSS_FOG_ANIMATION/master/fog1.png") center center/cover no-repeat transparent;
+}
+#foglayer_02 .image01, #foglayer_02 .image02,
+#foglayer_03 .image01, #foglayer_03 .image02{
+  background: url("https://raw.githubusercontent.com/danielstuart14/CSS_FOG_ANIMATION/master/fog2.png") center center/cover no-repeat transparent;
+}
+
+/* ---------- Keyframe Layer 1 ---------- */
+@-webkit-keyframes foglayer_01_opacity {
+  0% { opacity: .1; }
+  22% { opacity: .5; }
+  40% { opacity: .28; }
+  58% { opacity: .4; }
+  80% { opacity: .16; }
+  100% { opacity: .1; }
+}
+@-moz-keyframes foglayer_01_opacity {
+  0% { opacity: .1; }
+  22% { opacity: .5; }
+  40% { opacity: .28; }
+  58% { opacity: .4; }
+  80% { opacity: .16; }
+  100% { opacity: .1; }
+}
+@-o-keyframes foglayer_01_opacity {
+  0% { opacity: .1; }
+  22% { opacity: .5; }
+  40% { opacity: .28; }
+  58% { opacity: .4; }
+  80% { opacity: .16; }
+  100% { opacity: .1; }
+}
+@keyframes foglayer_01_opacity {
+  0% { opacity: .1; }
+  22% { opacity: .5; }
+  40% { opacity: .28; }
+  58% { opacity: .4; }
+  80% { opacity: .16; }
+  100% { opacity: .1; }
+}
+/* ---------- Keyframe Layer 2 ---------- */
+@-webkit-keyframes foglayer_02_opacity {
+  0% { opacity: .5; }
+  25% { opacity: .2; }
+  50% { opacity: .1; }
+  80% { opacity: .3; }
+  100% { opacity: .5; }
+}
+@-moz-keyframes foglayer_02_opacity {
+  0% { opacity: .5; }
+  25% { opacity: .2; }
+  50% { opacity: .1; }
+  80% { opacity: .3; }
+  100% { opacity: .5; }
+}
+@-o-keyframes foglayer_02_opacity {
+  0% { opacity: .5; }
+  25% { opacity: .2; }
+  50% { opacity: .1; }
+  80% { opacity: .3; }
+  100% { opacity: .5; }
+}
+@keyframes foglayer_02_opacity {
+  0% { opacity: .5; }
+  25% { opacity: .2; }
+  50% { opacity: .1; }
+  80% { opacity: .3; }
+  100% { opacity: .5; }
+}
+/* ---------- Keyframe Layer 3 ---------- */
+@-webkit-keyframes foglayer_03_opacity {
+  0% { opacity: .8 }
+  27% { opacity: .2; }
+  52% { opacity: .6; }
+  68% { opacity: .3; }
+  100% { opacity: .8; }
+}
+@-moz-keyframes foglayer_03_opacity {
+  0% { opacity: .8 }
+  27% { opacity: .2; }
+  52% { opacity: .6; }
+  68% { opacity: .3; }
+  100% { opacity: .8; }
+}
+@-o-keyframes foglayer_03_opacity {
+  0% { opacity: .8 }
+  27% { opacity: .2; }
+  52% { opacity: .6; }
+  68% { opacity: .3; }
+  100% { opacity: .8; }
+}
+@keyframes foglayer_03_opacity {
+  0% { opacity: .8; }
+  27% { opacity: .2; }
+  52% { opacity: .6; }
+  68% { opacity: .3; }
+  100% { opacity: .8; }
+}
+/* ---------- Keyframe moveMe ---------- */
+@-webkit-keyframes foglayer_moveme {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+@-moz-keyframes foglayer_moveme {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+@-o-keyframes foglayer_moveme {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+@keyframes foglayer_moveme {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+@media only screen
+  and (min-width: 280px)
+  and (max-width: 767px) {
+    #foglayer_01 .image01, #foglayer_01 .image02,
+    #foglayer_02 .image01, #foglayer_02 .image02,
+    #foglayer_03 .image01, #foglayer_03 .image02 {
+      width: 100%;
+    }
+  }
+/**/
